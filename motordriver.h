@@ -45,7 +45,7 @@ extern "C"
 
 
     // member functions
-    DriverConfiguration MotorDriver__changeBridgeMode( 
+    void MotorDriver__changeBridgeMode( 
         MotorDriver* self, DriverConfiguration mode );
     
     bool MotorDriver__motorDriverIsFaulty( MotorDriver* self );

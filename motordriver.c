@@ -64,11 +64,16 @@ MotorDriver* MotorDriver__create( uint8_t en,
     
     // map Arduino<->Motor Shield pins
     pinMode( md->inA, OUTPUT );
-    pinMode( md->inB, OUTPUT );
     pinMode( md->pwm, OUTPUT );
     pinMode( md->cs, INPUT );
     digitalWrite( md->inA, LOW );
-    digitalWrite( md->inB, LOW );
+    
+    if ( mode == FULLBRIDGE )
+    {
+        pinMode( md->inB, OUTPUT );
+        digitalWrite( md->inB, LOW );
+    }
+
     
     return md;  
 }
@@ -95,7 +100,7 @@ void MotorDriver__destroy( MotorDriver* md )
 ////////////////////////////////////////////////////////////////////////////////
 
 // Function to change the driver configuration (HALFBRIDGE OR FULLBRIDGE)
-DriverConfiguration MotorDriver__changeBridgeMode( MotorDriver* self, 
+void MotorDriver__changeBridgeMode( MotorDriver* self, 
                                                    DriverConfiguration mode )
 {
     if ( MotorDriver__motorDriverStatus( self ) && 
