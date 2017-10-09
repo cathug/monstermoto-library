@@ -1,4 +1,4 @@
-# VNH2SP30 H-Bridge Driver for DC motors For SparkFun MonsterMoto Shields and el cheapo Chinese VNH2SP30 motor driver modules
+# VNH2SP30 H-Bridge DC motor driver library for SparkFun MonsterMoto Shields and el-cheapo Chinese driver modules
 
 
 The original example sketch by
