@@ -1,11 +1,10 @@
-# VNH2SP30 H-Bridge Driver for DC motors For SparkFun MonsterMoto Shields and  
-el cheapo Chinese VNH2SP30 motor driver modules
+# VNH2SP30 H-Bridge Driver for DC motors For SparkFun MonsterMoto Shields and el cheapo Chinese VNH2SP30 motor driver modules
 
 
-The original example sketch by [Jim Lindblom](http://cdn.sparkfun.com/  
-datasheets/Dev/Arduino/Shields/MonsterMoto_Shield_Example.pde) 
+The original example sketch by
+[Jim Lindblom](http://cdn.sparkfun.com/datasheets/Dev/Arduino/Shields/MonsterMoto_Shield_Example.pde) 
 is now made object-oriented programming friendly.  A few extra functions have 
-been added to the library.  See below for details. 
+also been added to the library.  See below for details. 
 
 This library is written in object-oriented C.  I could have written a C++ Class 
 instead but would like to get a hang of C-style OOP.
